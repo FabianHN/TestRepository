@@ -29,7 +29,9 @@ namespace Log_In
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MainStudent ss = new MainStudent();
+            ss.Show();
         }
     }
 }
