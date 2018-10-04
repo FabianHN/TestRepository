@@ -131,11 +131,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnLog_In;
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label lblUserName;
-        private System.Windows.Forms.Label lblPassword;
+        //private System.Windows.Forms.Button btnLog_In;
+        //private System.Windows.Forms.TextBox txtUserName;
+        //private System.Windows.Forms.TextBox txtPassword;
+        //private System.Windows.Forms.Label lblUserName;
+        //private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtUser;
