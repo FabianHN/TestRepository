@@ -102,6 +102,7 @@
             // 
             // Form1
             // 
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(316, 269);
             this.Controls.Add(this.picImage);
             this.Controls.Add(this.btnExit);
@@ -110,6 +111,7 @@
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Moodle Log-In";
             this.Load += new System.EventHandler(this.Form1_Load);
