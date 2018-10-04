@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.btnLogIn = new System.Windows.Forms.Button();
@@ -38,26 +38,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "USERNAME:";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(22, 134);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(80, 13);
+            this.lblUser.TabIndex = 0;
+            this.lblUser.Text = "USERNAME:";
             // 
-            // label2
+            // lblPass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "PASSWORD:";
+            this.lblPass.AutoSize = true;
+            this.lblPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPass.Location = new System.Drawing.Point(22, 176);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(82, 13);
+            this.lblPass.TabIndex = 1;
+            this.lblPass.Text = "PASSWORD:";
             // 
             // txtUser
             // 
+            this.txtUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUser.Location = new System.Drawing.Point(110, 131);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(149, 20);
@@ -65,6 +68,7 @@
             // 
             // txtPass
             // 
+            this.txtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPass.Location = new System.Drawing.Point(110, 173);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(149, 20);
@@ -72,6 +76,7 @@
             // 
             // btnLogIn
             // 
+            this.btnLogIn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.Location = new System.Drawing.Point(110, 220);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(63, 23);
@@ -82,6 +87,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(196, 220);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(63, 23);
@@ -109,8 +115,8 @@
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUser);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblPass);
+            this.Controls.Add(this.lblUser);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Moodle Log-In";
@@ -128,8 +134,8 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnLogIn;
