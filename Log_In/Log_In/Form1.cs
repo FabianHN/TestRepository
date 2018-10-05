@@ -47,5 +47,17 @@ namespace Log_In
                 MessageBox.Show("Please enter your Username and Password correctly.");
             }
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked)
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

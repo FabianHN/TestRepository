@@ -36,6 +36,7 @@
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.picImage = new System.Windows.Forms.PictureBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +73,7 @@
             this.txtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPass.Location = new System.Drawing.Point(110, 173);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(149, 20);
             this.txtPass.TabIndex = 3;
             // 
@@ -81,7 +83,7 @@
             this.btnLogIn.Location = new System.Drawing.Point(110, 220);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(63, 23);
-            this.btnLogIn.TabIndex = 4;
+            this.btnLogIn.TabIndex = 1;
             this.btnLogIn.Text = "&LOGIN";
             this.btnLogIn.UseVisualStyleBackColor = true;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
@@ -92,7 +94,7 @@
             this.btnExit.Location = new System.Drawing.Point(196, 220);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(63, 23);
-            this.btnExit.TabIndex = 5;
+            this.btnExit.TabIndex = 2;
             this.btnExit.Text = "E&XIT";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -107,10 +109,23 @@
             this.picImage.TabIndex = 6;
             this.picImage.TabStop = false;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(265, 176);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(57, 17);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "Show";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(316, 269);
+            this.ClientSize = new System.Drawing.Size(378, 269);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.picImage);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogIn);
@@ -131,11 +146,11 @@
 
         #endregion
 
-        //private System.Windows.Forms.Button btnLog_In;
-        //private System.Windows.Forms.TextBox txtUserName;
-        //private System.Windows.Forms.TextBox txtPassword;
-        //private System.Windows.Forms.Label lblUserName;
-        //private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.Button btnLog_In;
+        private System.Windows.Forms.TextBox txtUserName;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.TextBox txtUser;
@@ -143,6 +158,7 @@
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.PictureBox picImage;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
