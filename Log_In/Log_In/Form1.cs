@@ -50,13 +50,13 @@ namespace Log_In
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(checkBox1.Checked)
+            if(checkBox1.Checked == true)
             {
-                txtPass.UseSystemPasswordChar = true;
+                txtPass.UseSystemPasswordChar = false;
             }
             else
             {
-                txtPass.UseSystemPasswordChar = false;
+                txtPass.UseSystemPasswordChar = true;
             }
         }
     }

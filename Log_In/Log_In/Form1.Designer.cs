@@ -73,7 +73,6 @@
             this.txtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtPass.Location = new System.Drawing.Point(110, 173);
             this.txtPass.Name = "txtPass";
-            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(149, 20);
             this.txtPass.TabIndex = 3;
             // 
@@ -112,6 +111,8 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(265, 176);
             this.checkBox1.Name = "checkBox1";
@@ -124,7 +125,7 @@
             // Form1
             // 
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(378, 269);
+            this.ClientSize = new System.Drawing.Size(327, 269);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.picImage);
             this.Controls.Add(this.btnExit);
